@@ -1,2 +1,2 @@
-# patikanotortalaması hesaplama
+# patika notortalaması hesaplama
 patika not ortalaması hesaplaması içindir
