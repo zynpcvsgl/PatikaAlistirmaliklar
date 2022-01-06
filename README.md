@@ -1,2 +1,2 @@
-# patika notortalaması hesaplama
-patika not ortalaması hesaplaması içindir
+# patika alıştırmaları
+patikadev alıştırmaları için oluşturulmuştur
