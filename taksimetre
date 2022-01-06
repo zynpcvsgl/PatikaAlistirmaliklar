@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+        int km;
+        double  acilis = 20 ;
+        double kmBasiUcret = 2.20 ;
+        double ucret;
+
+        Scanner kmİnput = new Scanner(System.in) ;
+        System.out.print("Kaç Km Gidildiğini Giriniz : ");
+        km = kmİnput.nextInt();
+
+        ucret  = km * kmBasiUcret;
+        ucret  += kmBasiUcret;
+        ucret  = (ucret<20)? 20 : ucret;
+       
+
+        System.out.print("Ücretiniz : "+ ucret  );
+        System.out.print(" TL dir.");
+
+    }
+}
