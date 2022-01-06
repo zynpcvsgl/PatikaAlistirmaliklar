@@ -1,2 +1,2 @@
 # patikanotort
-patika not ort
+patika not ortalaması hesaplaması içindir
