@@ -1,2 +1,2 @@
-# patika alıstırmaları
+# patika alıstırmalari
 patikadev alıstırmaları için oluşturulmuştur
