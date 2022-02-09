@@ -1,0 +1,75 @@
+import java.util.Scanner;
+public class BiletHesaplama {
+    public static void main(String[] args) {
+        int yol,yaş,tip;
+        double per = 0.10, total = 0;
+        
+        Scanner input = new Scanner (System.in);
+
+        System.out.print("Mesafeyi Giriniz (km) : ");
+        yol = input.nextInt();
+
+        System.out.print("Yaşınızı Giriniz : ");
+        yaş = input.nextInt();
+
+        System.out.print("Yolculuk Tipini Seçiniz\nTek Yön için 1'e basınız.\nGidiş Dönüş için 2'ye basınız.\nSeçiminiz : ");
+        tip = input.nextInt();
+        if( yol < 0 || yaş <0 ){
+            System.out.print("Hatalı Veri Girdiniz !");
+        }
+        else{
+            if(yol > 0 && yaş > 24 && yaş <= 65){
+                if(tip == 1){
+                    total += (yol * per);
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else if(tip == 2){
+                    total += ((2 * yol * per) - (0.4 * yol * per)) ;
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else{
+                    System.out.print("Hatalı Veri Girdiniz !");
+                }
+            }
+            if(yol > 0 && yaş < 12 && yaş > 0) {
+                if(tip == 1){
+                    total += (yol * per) * 0.5;
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else if(tip == 2){
+                    total += ((yol * per)-(0.2 * yol * per));
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else{
+                    System.out.print("Hatalı Veri Girdiniz !");
+                }
+            }
+            if(yol > 0 && yaş < 25 && yaş > 11 ) {
+                if(tip == 1){
+                    total += (yol * per) * 0.9;
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else if(tip == 2){
+                    total += (( yol * per  * 1.8) - (yol * per * 0.36 ));
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else{
+                    System.out.print("Hatalı Veri Girdiniz !");
+                }
+            }
+            if(yol > 0 && yaş > 65 ) {
+                if(tip == 1){
+                    total += yol * per * 0.7;
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else if(tip == 2){
+                    total += (( yol * per * 1.4) - (yol * per * 0.28));
+                    System.out.print("Toplam Tutar : " +total);
+                }
+                else{
+                    System.out.print("Hatalı Veri Girdiniz !");
+                }
+            }
+        }    
+    }
+}
